@@ -1,0 +1,330 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Syne:regular,500,600,700,800);
+
+/*---------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 20rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------------------*/
+
+body {
+  background-color: #f4f4f4;
+  font-family: "dm sans";
+  font-size: 2rem;
+  color: black;
+}
+
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-size: normal;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+/* .nav-list-item {
+  display: block;
+} */
+
+.nav-list-item:not(:last-of-type) {
+  padding-right: 40px;
+}
+
+.logo {
+  font-family: "syne";
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* ----- MAIN ----- */
+
+.section {
+  margin-top: 180px;
+}
+
+.h1-wrapper {
+  display: flex;
+  height: 202px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h1 {
+  color: #383838;
+  text-align: center;
+  font-family: Syne;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 9.68px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+
+.img-hands {
+  width: 630px;
+  height: 700px;
+}
+
+.flex {
+  display: flex;
+}
+
+.hero-text {
+  display: block;
+  width: 420px;
+  color: #383838;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sign-up-link {
+  display: block;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 74px;
+}
+
+.hero-2nd-img {
+  width: 525px;
+  height: 346px;
+  margin-top: 125px;
+}
+
+/* ----- ABOUT US ----- */
+
+.title {
+  color: #383838;
+  font-family: Syne;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.7px;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us-text {
+  display: block;
+  width: 525px;
+  height: 530px;
+  margin-top: 72px;
+  color: #383838;
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-us-text-small {
+  padding-bottom: 20px;
+  color: #383838;
+  text-align: right;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-us-img {
+  width: 630px;
+  height: 562px;
+}
+
+.about-us-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.about-us-list .item {
+}
+
+.about-us-list .item-number {
+  color: #383838;
+  text-align: center;
+  font-family: Syne;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.7px;
+}
+.about-us-list .item-text {
+  color: var(--black, #383838);
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* ----- PLACE ----- */
+
+.place {
+  height: 885px;
+  background-image: url(/img/unsplash_d1hKXgFJUKw\ 2.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+.text-place {
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 100px;
+  color: var(--WHITE, #f4f4f4);
+  font-family: Syne;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.7px;
+}
+.text-where {
+  margin-left: 310px;
+  color: var(--WHITE, #f4f4f4);
+  font-family: Syne;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.7px;
+}
+.text-be {
+  margin-left: 700px;
+  color: var(--WHITE, #f4f4f4);
+  font-family: Syne;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.7px;
+}
+.place-text-small {
+  display: inline-block;
+  margin-top: 250px;
+  margin-left: 100px;
+  color: var(--WHITE, #f4f4f4);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ----- WORKS ----- */
+
+.works-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.works-list-item-text {
+  color: var(--black, #383838);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.works-list-item-img {
+  width: 400px;
+  height: 400px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* ----- CLASSES -----*/
+
+
+.classes-test {
+  display: flex;
+  flex-direction: column;
+}
+
+.classes-img-1 {
+  width: 400px;
+  height: 295px;
+}
+
+.classes-img-2 {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 400px;
+  height: 285px;
+}
+
+.classes .flex {
+  margin-top: 100px;
+}
