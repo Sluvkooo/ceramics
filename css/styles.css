@@ -233,8 +233,8 @@ h1 {
 .place {
   height: 885px;
   background-image: url(/img/unsplash_d1hKXgFJUKw\ 2.jpg);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
+  /* background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat; */
 }
 
 .text-place {
@@ -359,14 +359,17 @@ h1 {
 .questions-list-item {
   display: flex;
   position: relative;
+  align-items: baseline;
+  width: 925px;
 }
 
-.questions-list-item-text::after {
+.questions-list-item::after {
   content: "";
   position: absolute;
+  top: 50px;
   display: block;
-  width: 400px;
-  height: 1px;
+  width: 925px;
+  height: 2px;
   background-color: #383838;
 }
 
@@ -382,6 +385,7 @@ h1 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 4.4px;
+  margin-right: 55px;
 }
 
 .questions-list-item-text {
@@ -391,4 +395,34 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+/* ----- INVITE ----- */
+
+.invite {
+  height: 980px;
+  background-image: url(/img/close-up-artist-clay-pot_23-2148986303.jpg);
+  /* background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat; */
+}
+
+.invite-container {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-bottom: 120px;
+  padding-right: 205px;
+}
+
+.invite .title {
+  color: #f4f4f4;
+}
+
+.invite-text {
+  color: var(--WHITE, #f4f4f4);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
 }
