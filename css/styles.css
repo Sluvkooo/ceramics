@@ -307,7 +307,6 @@ h1 {
 
 /* ----- CLASSES -----*/
 
-
 .classes-test {
   display: flex;
   flex-direction: column;
@@ -327,4 +326,69 @@ h1 {
 
 .classes .flex {
   margin-top: 100px;
+}
+
+.classes-list-item {
+  color: var(--black, #383838);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 80px;
+  margin-left: 105px;
+  position: relative;
+}
+
+.classes-list-item::after {
+  content: "";
+  position: absolute;
+  margin-top: 20px;
+  display: block;
+  width: 400px;
+  height: 2px;
+  background-color: #383838;
+}
+
+/* ----- QUESTIONS ----- */
+
+.questions-list {
+  margin-top: 120px;
+}
+
+.questions-list-item {
+  display: flex;
+  position: relative;
+}
+
+.questions-list-item-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 1px;
+  background-color: #383838;
+}
+
+.questions-list-item:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.questions-list-item .numbers {
+  color: var(--black, #383838);
+  font-family: Syne;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.4px;
+}
+
+.questions-list-item-text {
+  color: var(--black, #383838);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
