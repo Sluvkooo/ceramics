@@ -399,9 +399,17 @@ h1 {
 
 /* ----- INVITE ----- */
 
+.wrapper {
+  height: 980px;
+  width: 100%;
+  background-image: url(/img/close-up-artist-clay-pot_23-2148986303.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
 .invite {
   height: 980px;
-  background-image: url(/img/close-up-artist-clay-pot_23-2148986303.jpg);
+
   /* background-position: right bottom, left top;
   background-repeat: no-repeat, repeat; */
 }
@@ -410,7 +418,8 @@ h1 {
   padding-top: 100px;
   padding-left: 100px;
   padding-bottom: 120px;
-  padding-right: 205px;
+  display: flex;
+  flex-direction: column;
 }
 
 .invite .title {
@@ -425,4 +434,71 @@ h1 {
   font-weight: 400;
   line-height: normal;
   margin-top: 40px;
+}
+
+.invite-form {
+  margin-top: 40px;
+  margin-left: auto;
+}
+
+.invite-form-title {
+  color: var(--WHITE, #f4f4f4);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.invite-form-input {
+  color: #afabab;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 400px;
+  height: 79px;
+  background-color: transparent;
+  border: 1px solid var(--WHITE, #f4f4f4);
+  outline: none;
+  padding-left: 20px;
+}
+
+.invite-form-input::placeholder {
+  color: #afabab;
+}
+
+.invite-submit-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 82px;
+}
+
+/* ----- CONTACTS ----- */
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-text {
+  color: var(--black, #383838);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* margin-top: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 505px;
+}
+
+.bold {
+  font-weight: 500;
+  display: block;
+  /* margin-bottom: 20px; */
 }
