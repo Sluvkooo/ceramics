@@ -239,7 +239,7 @@ h1 {
 
 .place {
   height: 885px;
-  background-image: url(/img/unsplash_d1hKXgFJUKw\ 2.jpg);
+  background-image: url(./img/unsplash_d1hKXgFJUKw.jpg);
   /* background-position: right bottom, left top;
   background-repeat: no-repeat, repeat; */
 }
@@ -409,7 +409,7 @@ h1 {
 .invite-wrapper {
   height: 980px;
   width: 100%;
-  background-image: url(/img/close-up-artist-clay-pot_23-2148986303.jpg);
+  background-image: url(./img/close-up-artist-clay-pot_23-2148986303.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
