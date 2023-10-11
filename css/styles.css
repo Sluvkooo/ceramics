@@ -138,19 +138,26 @@ h1 {
 }
 
 .sign-up-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "DM Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 74px;
+  margin-top: 24px;
+  width: 130px;
+  height: 130px;
+  color: #f6f6f6;
+  background-color: #383838;
+  border-radius: 50%;
 }
 
 .hero-2nd-img {
   width: 525px;
   height: 346px;
-  margin-top: 125px;
+  margin-top: 76px;
 }
 
 /* ----- ABOUT US ----- */
@@ -399,7 +406,7 @@ h1 {
 
 /* ----- INVITE ----- */
 
-.wrapper {
+.invite-wrapper {
   height: 980px;
   width: 100%;
   background-image: url(/img/close-up-artist-clay-pot_23-2148986303.jpg);
@@ -495,10 +502,47 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 505px;
+  margin-bottom: 20px;
 }
 
 .bold {
   font-weight: 500;
   display: block;
-  /* margin-bottom: 20px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ----- FOOTER ----- */
+
+.footer-wrapper {
+  width: 100%;
+  height: 226px;
+  background-color: #383838;
+  margin-top: 160px;
+  padding-top: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+  color: var(--WHITE, #F4F4F4);
+font-family: Syne;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 3.52px;
+}
+
+.footer-nav-item {
+  color: var(--WHITE, #F4F4F4);
+font-family: DM Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 20px;
 }
