@@ -345,12 +345,16 @@ h1 {
   margin-top: 80px;
   margin-left: 105px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
 }
 
 .classes-list-item::after {
   content: "";
   position: absolute;
-  margin-top: 20px;
+  margin-top: 50px;
   display: block;
   width: 400px;
   height: 2px;
@@ -359,8 +363,14 @@ h1 {
 
 /* ----- QUESTIONS ----- */
 
+.questions {
+  display: flex;
+  flex-direction: column;
+}
+
 .questions-list {
   margin-top: 120px;
+  margin-left: auto;
 }
 
 .questions-list-item {
@@ -402,6 +412,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-right: auto;
 }
 
 /* ----- INVITE ----- */
@@ -489,6 +500,7 @@ h1 {
 .contacts {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .contacts-text {
@@ -510,6 +522,32 @@ h1 {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.insta-svg {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+
+.facebook-svg {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 280px;
+  right: 0;
+}
+
+.tiktok-svg {
+  width: 40px;
+  height: 40px;
+  background-color: #383838;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  right: 0;
 }
 
 /* ----- FOOTER ----- */
