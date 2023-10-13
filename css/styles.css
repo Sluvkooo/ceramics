@@ -57,6 +57,11 @@ body {
   display: flex;
 }
 
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   max-width: 1240px;
   margin-left: auto;
@@ -102,7 +107,7 @@ body {
   height: 202px;
   justify-content: center;
   align-items: flex-end;
-    color: #383838;
+  color: #383838;
   text-align: center;
   font-family: Syne;
   font-size: 88px;
@@ -167,6 +172,10 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 7.7px;
+}
+
+.title--white {
+  color: #f4f4f4;
 }
 
 .about-us__content {
@@ -294,17 +303,12 @@ body {
 
 /* ----- CLASSES -----*/
 
-.classes-test {
-  display: flex;
-  flex-direction: column;
-}
-
-.classes-img-1 {
+.classes__img-1st {
   width: 400px;
   height: 295px;
 }
 
-.classes-img-2 {
+.classes__img-2nd {
   margin-top: 20px;
   margin-right: 20px;
   width: 400px;
@@ -315,7 +319,7 @@ body {
   margin-top: 100px;
 }
 
-.classes-list-item {
+.classes__item {
   color: var(--black, #383838);
   font-family: DM Sans;
   font-size: 32px;
@@ -331,7 +335,7 @@ body {
   width: 400px;
 }
 
-.classes-list-item::after {
+.classes__item::after {
   content: "";
   position: absolute;
   margin-top: 50px;
@@ -348,19 +352,19 @@ body {
   flex-direction: column;
 }
 
-.questions-list {
+.questions__list {
   margin-top: 120px;
   margin-left: auto;
 }
 
-.questions-list-item {
+.questions__item {
   display: flex;
   position: relative;
   align-items: baseline;
   width: 925px;
 }
 
-.questions-list-item::after {
+.questions__item::after {
   content: "";
   position: absolute;
   top: 50px;
@@ -370,11 +374,11 @@ body {
   background-color: #383838;
 }
 
-.questions-list-item:not(:last-child) {
+.questions__item:not(:last-child) {
   margin-bottom: 80px;
 }
 
-.questions-list-item .numbers {
+.questions__numbers {
   color: var(--black, #383838);
   font-family: Syne;
   font-size: 40px;
@@ -385,7 +389,7 @@ body {
   margin-right: 55px;
 }
 
-.questions-list-item-text {
+.questions__text {
   color: var(--black, #383838);
   font-family: DM Sans;
   font-size: 32px;
@@ -397,10 +401,10 @@ body {
 
 /* ----- INVITE ----- */
 
-.invite-wrapper {
+.invite-bg {
   height: 980px;
   width: 100%;
-  background-image: url(./img/close-up-artist-clay-pot_23-2148986303.jpg);
+  background-image: url(/img/invite-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -412,7 +416,7 @@ body {
   background-repeat: no-repeat, repeat; */
 }
 
-.invite-container {
+.invite__position {
   padding-top: 100px;
   padding-left: 100px;
   padding-bottom: 120px;
@@ -420,11 +424,7 @@ body {
   flex-direction: column;
 }
 
-.invite .title {
-  color: #f4f4f4;
-}
-
-.invite-text {
+.invite__text {
   color: var(--WHITE, #f4f4f4);
   font-family: DM Sans;
   font-size: 32px;
@@ -439,7 +439,7 @@ body {
   margin-left: auto;
 }
 
-.invite-form-title {
+.invite-form__title {
   color: var(--WHITE, #f4f4f4);
   font-family: DM Sans;
   font-size: 32px;
@@ -448,7 +448,7 @@ body {
   line-height: normal;
 }
 
-.invite-form-input {
+.invite-form__input {
   color: #afabab;
   font-family: DM Sans;
   font-size: 24px;
@@ -463,16 +463,19 @@ body {
   padding-left: 20px;
 }
 
-.invite-form-input::placeholder {
+.invite-form__input::placeholder {
   color: #afabab;
 }
 
-.invite-submit-btn {
+.invite-form__btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 400px;
   height: 82px;
+  color: #383838;
+  font-family: DM Sans;
+  font-size: 26px;
 }
 
 /* ----- CONTACTS ----- */
@@ -541,26 +544,26 @@ body {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-logo {
-  color: var(--WHITE, #F4F4F4);
-font-family: Syne;
-font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 3.52px;
+  color: var(--WHITE, #f4f4f4);
+  font-family: Syne;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.52px;
 }
 
 .footer-nav-item {
-  color: var(--WHITE, #F4F4F4);
-font-family: DM Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-padding-bottom: 20px;
+  color: var(--WHITE, #f4f4f4);
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
 }
