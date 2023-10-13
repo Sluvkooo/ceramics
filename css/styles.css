@@ -53,6 +53,10 @@ body {
   color: black;
 }
 
+.flex {
+  display: flex;
+}
+
 .container {
   max-width: 1240px;
   margin-left: auto;
@@ -68,7 +72,7 @@ body {
   margin-top: 40px;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   align-items: center;
 }
@@ -77,7 +81,7 @@ body {
   display: block;
 } */
 
-.nav-list-item:not(:last-of-type) {
+.nav__item:not(:last-of-type) {
   padding-right: 40px;
 }
 
@@ -87,7 +91,7 @@ body {
   font-weight: 500;
 }
 
-/* ----- MAIN ----- */
+/* ----- HERO ----- */
 
 .section {
   margin-top: 180px;
@@ -98,10 +102,7 @@ body {
   height: 202px;
   justify-content: center;
   align-items: flex-end;
-}
-
-h1 {
-  color: #383838;
+    color: #383838;
   text-align: center;
   font-family: Syne;
   font-size: 88px;
@@ -117,16 +118,12 @@ h1 {
   margin-top: 44px;
 }
 
-.img-hands {
+/* .img-hands {
   width: 630px;
   height: 700px;
-}
+} */
 
-.flex {
-  display: flex;
-}
-
-.hero-text {
+.hero__text {
   display: block;
   width: 420px;
   color: #383838;
@@ -154,7 +151,7 @@ h1 {
   border-radius: 50%;
 }
 
-.hero-2nd-img {
+.hero__img--vase {
   width: 525px;
   height: 346px;
   margin-top: 76px;
@@ -172,13 +169,13 @@ h1 {
   letter-spacing: 7.7px;
 }
 
-.about-us-content {
+.about-us__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.about-us-text {
+.about-us__text {
   display: block;
   width: 525px;
   height: 530px;
@@ -191,7 +188,7 @@ h1 {
   line-height: normal;
 }
 
-.about-us-text-small {
+.about-us__text--small {
   padding-bottom: 20px;
   color: #383838;
   text-align: right;
@@ -202,21 +199,18 @@ h1 {
   line-height: normal;
 }
 
-.about-us-img {
+.about-us__img {
   width: 630px;
   height: 562px;
 }
 
-.about-us-list {
+.about-us__list {
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
 }
 
-.about-us-list .item {
-}
-
-.about-us-list .item-number {
+.about-us__number {
   color: #383838;
   text-align: center;
   font-family: Syne;
@@ -226,88 +220,74 @@ h1 {
   line-height: normal;
   letter-spacing: 7.7px;
 }
-.about-us-list .item-text {
+.about-us__advantages {
   color: var(--black, #383838);
   font-family: DM Sans;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: 16px;
 }
 
 /* ----- PLACE ----- */
 
 .place {
   height: 885px;
-  background-image: url(/img/unsplash_d1hKXgFJUKw\ 2.jpg);
+  background-image: url(/img/place-bg.jpg);
   /* background-position: right bottom, left top;
   background-repeat: no-repeat, repeat; */
 }
 
-.text-place {
+.place__title {
+  color: var(--WHITE, #f4f4f4);
+  font-family: Syne;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.7px;
+}
+
+.place__title--1st-str {
   display: inline-block;
   margin-top: 100px;
   margin-left: 100px;
-  color: var(--WHITE, #f4f4f4);
-  font-family: Syne;
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 7.7px;
 }
-.text-where {
+.place__title--2nd-str {
   margin-left: 310px;
-  color: var(--WHITE, #f4f4f4);
-  font-family: Syne;
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 7.7px;
 }
-.text-be {
+.place__title--3rd-str {
   margin-left: 700px;
-  color: var(--WHITE, #f4f4f4);
-  font-family: Syne;
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 7.7px;
 }
-.place-text-small {
+.place__text {
   display: inline-block;
   margin-top: 250px;
   margin-left: 100px;
   color: var(--WHITE, #f4f4f4);
-  font-family: DM Sans;
   font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 /* ----- WORKS ----- */
 
-.works-list {
+.works__list {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
 }
 
-.works-list-item-text {
+.works__text {
   color: var(--black, #383838);
-  font-family: DM Sans;
+  /* font-family: DM Sans;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: normal; */
 }
 
-.works-list-item-img {
-  width: 400px;
-  height: 400px;
+.works__img {
+  /* width: 400px;
+  height: 400px; */
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -420,7 +400,7 @@ h1 {
 .invite-wrapper {
   height: 980px;
   width: 100%;
-  background-image: url(/img/close-up-artist-clay-pot_23-2148986303.jpg);
+  background-image: url(./img/close-up-artist-clay-pot_23-2148986303.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
