@@ -3,23 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body id="top">
     <header>
       <div class="container">
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item">ABOUT</li>
-            <li class="nav__item">PLACE FOR</li>
-            <li class="nav__item">WORKS</li>
+            <li class="nav__item">
+              <a href="#about">ABOUT US</a>
+            </li>
+            <li class="nav__item">
+              <a href="#place-for">PLACE FOR</a>
+            </li>
+            <li class="nav__item">
+              <a href="#works">WORKS</a>
+            </li>
           </ul>
           <a href="index.html" class="logo">CERAMICS</a>
           <ul class="nav__list">
-            <li class="nav__item">CLASSES</li>
-            <li class="nav__item">QUESTIONS</li>
-            <li class="nav__item">CONTACTS</li>
+            <li class="nav__item">
+              <a href="#classes">CLASSES</a>
+            </li>
+            <li class="nav__item">
+              <a href="#questions">QUESTIONS</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts">CONTACTS</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -40,7 +52,7 @@
               We invite you to pottery classes. You will be able to relax and
               create dishes that are dear to your soul with your own hands.
             </p>
-            <a href="" class="sign-up-link">sign up</a>
+            <a href="#sign-up" class="sign-up-link">sign up</a>
             <img
               class="hero__img hero__img--vase"
               src="./img/arrangement-with-vase_23-2148986269.jpg "
@@ -49,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="about">
         <div class="about-us section">
           <h2 class="title">About us</h2>
           <div class="about-us__content">
@@ -106,7 +118,7 @@
           </ul>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="place-for">
         <div class="place section">
           <p class="place__title place__title--1st-str">Place</p>
           <p class="place__title place__title--2nd-str">where you can</p>
@@ -118,7 +130,7 @@
           </p>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="works">
         <div class="works section">
           <h2 class="title">Works</h2>
           <ul class="works__list">
@@ -152,7 +164,7 @@
           </ul>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="classes">
         <div class="classes section">
           <h2 class="title">classes</h2>
           <div class="flex">
@@ -178,68 +190,62 @@
             <ul class="classes__list">
               <li class="classes__item">
                 <p class="classes__text">Basic classes in group</p>
-                <img src="./img/Group 57.svg" alt="">
+                <img src="./img/Group 57.svg" alt="" />
               </li>
               <li class="classes__item">
                 <p class="classes__text">Children’s classes</p>
-                <img src="./img/Group 57.svg" alt="">
+                <img src="./img/Group 57.svg" alt="" />
               </li>
               <li class="classes__item">
                 <p class="classes__text">Couple classes</p>
-                <img src="./img/Group 57.svg" alt="">
+                <img src="./img/Group 57.svg" alt="" />
               </li>
               <li class="classes__item">
                 <p class="classes__text">Individual classes</p>
-                <img src="./img/Group 57.svg" alt="">
+                <img src="./img/Group 57.svg" alt="" />
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="questions">
         <div class="questions section">
           <h2 class="title">Questions</h2>
           <ul class="questions__list">
             <li class="questions__item">
               <span class="questions__numbers">01</span>
-              <p class="questions__text">
-                I have no experience. Can I come?
-              </p>
-              <img src="./img/Group 57.svg" alt="">
+              <p class="questions__text">I have no experience. Can I come?</p>
+              <img src="./img/Group 57.svg" alt="" />
             </li>
             <li class="questions__item">
               <span class="questions__numbers">02</span>
-              <p class="questions__text">
-                Do you have gift certificates?
-              </p>
-              <img src="./img/Group 57.svg" alt="">
+              <p class="questions__text">Do you have gift certificates?</p>
+              <img src="./img/Group 57.svg" alt="" />
             </li>
             <li class="questions__item">
               <span class="questions__numbers">03</span>
               <p class="questions__text">
                 Will it be necessary to put the item in the oven?
               </p>
-              <img src="./img/Group 57.svg" alt="">
+              <img src="./img/Group 57.svg" alt="" />
             </li>
             <li class="questions__item">
               <span class="questions__numbers">04</span>
               <p class="questions__text">
                 Can I take the produced dishes home?
               </p>
-              <img src="./img/Group 57.svg" alt="">
+              <img src="./img/Group 57.svg" alt="" />
             </li>
             <li class="questions__item">
               <span class="questions__numbers">05</span>
-              <p class="questions__text">
-                What is the cost of the classes?
-              </p>
-              <img src="./img/Group 57.svg" alt="">
+              <p class="questions__text">What is the cost of the classes?</p>
+              <img src="./img/Group 57.svg" alt="" />
             </li>
           </ul>
         </div>
       </div>
       <div class="invite-bg">
-        <div class="container">
+        <div class="container" id="sign-up">
           <div class="invite section">
             <div class="invite__position">
               <h2 class="title title--white">
@@ -284,42 +290,54 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="contacts">
         <div class="contacts section">
           <h2 class="title">Contacts</h2>
-          <p class="contacts-text">
-            <span class="bold">Phone number:</span>
+          <p class="contacts__text">
+            <span class="contacts__text contacts__text--bold"
+              >Phone number:</span
+            >
             +380740000223
           </p>
-          <p class="contacts-text">
-            <span class="bold">E-mail:</span>
+          <p class="contacts__text">
+            <span class="contacts__text contacts__text--bold">E-mail:</span>
             ceramics.kyiv@gmail.com
           </p>
-          <p class="contacts-text">
-            <span class="bold">Address:</span>
+          <p class="contacts__text">
+            <span class="contacts__text contacts__text--bold">Address:</span>
             Ukraine, Kyiv, 32 Shevchenko Blvd
           </p>
-          <img class="insta-svg" src="./img/entypo-social_instagram-with-circle.svg" alt="">
-          <img class="facebook-svg" src="./img/akar-icons_facebook-fill.svg" alt="">
-          <img class="tiktok-svg" src="./img/ic_outline-tiktok.svg" alt="">
-        </div>
-      </div>
-      <div class="footer-wrapper">
-        <div class="footer container">
-          <a class="footer-logo" href="index.html"> CERAMICS </a>
-          <ul class="footer-nav">
-            <li class="footer-nav-item">ABOUT</li>
-            <li class="footer-nav-item">PLACE FOR</li>
-            <li class="footer-nav-item">WORKS</li>
-          </ul>
-          <ul class="footer-nav">
-            <li class="footer-nav-item">CLASSES</li>
-            <li class="footer-nav-item">QUESTIONS</li>
-            <li class="footer-nav-item">CONTACTS</li>
-          </ul>
+          <img
+            class="svg-instagram"
+            src="./img/entypo-social_instagram-with-circle.svg"
+            alt=""
+          />
+          <img
+            class="svg-facebook"
+            src="./img/akar-icons_facebook-fill.svg"
+            alt=""
+          />
+          <img class="svg-tiktok" src="./img/ic_outline-tiktok.svg" alt="" />
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer container">
+          <a class="footer__logo" href="index.html"> CERAMICS </a>
+          <ul class="footer__nav">
+            <li class="footer__item">ABOUT</li>
+            <li class="footer__item">PLACE FOR</li>
+            <li class="footer__item">WORKS</li>
+          </ul>
+          <ul class="footer__nav">
+            <li class="footer__item">CLASSES</li>
+            <li class="footer__item">QUESTIONS</li>
+            <li class="footer__item">CONTACTS</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#top" class="to-top-btn">UP</a>
+    </footer>
   </body>
 </html>

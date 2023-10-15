@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
 @import url(https://fonts.googleapis.com/css?family=Syne:regular,500,600,700,800);
-
-/*---------------------------------*/
-
 * {
   padding: 0;
   margin: 0;
@@ -44,13 +40,17 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
-/*--------------------------------*/
 
+/*--------------------------------*/
 body {
   background-color: #f4f4f4;
   font-family: "dm sans";
   font-size: 2rem;
   color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .flex {
@@ -68,43 +68,62 @@ body {
   margin-right: auto;
 }
 
+.section {
+  margin-top: 140px;
+}
+
+.title {
+  color: #383838;
+  font-family: Syne;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.7px;
+}
+
+.title--white {
+  color: #f4f4f4;
+}
+
+.to-top-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  background-color: #383838;
+  padding: 10px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.2666666667);
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 20px;
   font-size: normal;
   font-weight: 400;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-
 .nav__list {
   display: flex;
   align-items: center;
 }
-
-/* .nav-list-item {
-  display: block;
-} */
-
 .nav__item:not(:last-of-type) {
   padding-right: 40px;
 }
 
 .logo {
   font-family: "syne";
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
-}
-
-/* ----- HERO ----- */
-
-.section {
-  margin-top: 180px;
 }
 
 .h1-wrapper {
   display: flex;
-  height: 202px;
+  height: 150px;
   justify-content: center;
   align-items: flex-end;
   color: #383838;
@@ -122,12 +141,6 @@ body {
   justify-content: space-between;
   margin-top: 44px;
 }
-
-/* .img-hands {
-  width: 630px;
-  height: 700px;
-} */
-
 .hero__text {
   display: block;
   width: 420px;
@@ -137,6 +150,11 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.hero__img--vase {
+  width: 525px;
+  height: 346px;
+  margin-top: 76px;
 }
 
 .sign-up-link {
@@ -156,34 +174,11 @@ body {
   border-radius: 50%;
 }
 
-.hero__img--vase {
-  width: 525px;
-  height: 346px;
-  margin-top: 76px;
-}
-
-/* ----- ABOUT US ----- */
-
-.title {
-  color: #383838;
-  font-family: Syne;
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 7.7px;
-}
-
-.title--white {
-  color: #f4f4f4;
-}
-
 .about-us__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .about-us__text {
   display: block;
   width: 525px;
@@ -196,7 +191,6 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-
 .about-us__text--small {
   padding-bottom: 20px;
   color: #383838;
@@ -207,18 +201,15 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-
 .about-us__img {
   width: 630px;
   height: 562px;
 }
-
 .about-us__list {
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
 }
-
 .about-us__number {
   color: #383838;
   text-align: center;
@@ -239,15 +230,10 @@ body {
   margin-top: 16px;
 }
 
-/* ----- PLACE ----- */
-
 .place {
   height: 885px;
   background-image: url(/img/place-bg.jpg);
-  /* background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat; */
 }
-
 .place__title {
   color: var(--WHITE, #f4f4f4);
   font-family: Syne;
@@ -257,7 +243,6 @@ body {
   line-height: normal;
   letter-spacing: 7.7px;
 }
-
 .place__title--1st-str {
   display: inline-block;
   margin-top: 100px;
@@ -277,14 +262,11 @@ body {
   font-size: 32px;
 }
 
-/* ----- WORKS ----- */
-
 .works__list {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
 }
-
 .works__text {
   color: var(--black, #383838);
   /* font-family: DM Sans;
@@ -293,7 +275,6 @@ body {
   font-weight: 400;
   line-height: normal; */
 }
-
 .works__img {
   /* width: 400px;
   height: 400px; */
@@ -301,24 +282,16 @@ body {
   margin-bottom: 16px;
 }
 
-/* ----- CLASSES -----*/
-
 .classes__img-1st {
   width: 400px;
   height: 295px;
 }
-
 .classes__img-2nd {
   margin-top: 20px;
   margin-right: 20px;
   width: 400px;
   height: 285px;
 }
-
-.classes .flex {
-  margin-top: 100px;
-}
-
 .classes__item {
   color: var(--black, #383838);
   font-family: DM Sans;
@@ -334,7 +307,6 @@ body {
   justify-content: space-between;
   width: 400px;
 }
-
 .classes__item::after {
   content: "";
   position: absolute;
@@ -345,25 +317,24 @@ body {
   background-color: #383838;
 }
 
-/* ----- QUESTIONS ----- */
+.classes .flex {
+  margin-top: 100px;
+}
 
 .questions {
   display: flex;
   flex-direction: column;
 }
-
 .questions__list {
   margin-top: 120px;
   margin-left: auto;
 }
-
 .questions__item {
   display: flex;
   position: relative;
   align-items: baseline;
   width: 925px;
 }
-
 .questions__item::after {
   content: "";
   position: absolute;
@@ -373,11 +344,9 @@ body {
   height: 2px;
   background-color: #383838;
 }
-
 .questions__item:not(:last-child) {
   margin-bottom: 80px;
 }
-
 .questions__numbers {
   color: var(--black, #383838);
   font-family: Syne;
@@ -388,7 +357,6 @@ body {
   letter-spacing: 4.4px;
   margin-right: 55px;
 }
-
 .questions__text {
   color: var(--black, #383838);
   font-family: DM Sans;
@@ -398,8 +366,6 @@ body {
   line-height: normal;
   margin-right: auto;
 }
-
-/* ----- INVITE ----- */
 
 .invite-bg {
   height: 980px;
@@ -411,11 +377,7 @@ body {
 
 .invite {
   height: 980px;
-
-  /* background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat; */
 }
-
 .invite__position {
   padding-top: 100px;
   padding-left: 100px;
@@ -423,7 +385,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .invite__text {
   color: var(--WHITE, #f4f4f4);
   font-family: DM Sans;
@@ -438,7 +399,6 @@ body {
   margin-top: 40px;
   margin-left: auto;
 }
-
 .invite-form__title {
   color: var(--WHITE, #f4f4f4);
   font-family: DM Sans;
@@ -447,7 +407,6 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-
 .invite-form__input {
   color: #afabab;
   font-family: DM Sans;
@@ -462,11 +421,12 @@ body {
   outline: none;
   padding-left: 20px;
 }
-
+.invite-form__input::-moz-placeholder {
+  color: #afabab;
+}
 .invite-form__input::placeholder {
   color: #afabab;
 }
-
 .invite-form__btn {
   display: inline-flex;
   justify-content: center;
@@ -478,15 +438,12 @@ body {
   font-size: 26px;
 }
 
-/* ----- CONTACTS ----- */
-
 .contacts {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-
-.contacts-text {
+.contacts__text {
   color: var(--black, #383838);
   font-family: DM Sans;
   font-size: 32px;
@@ -498,16 +455,15 @@ body {
   margin-right: auto;
   width: 505px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
-
-.bold {
+.contacts__text--bold {
   font-weight: 500;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
-.insta-svg {
+.svg-instagram {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -515,7 +471,7 @@ body {
   right: 0;
 }
 
-.facebook-svg {
+.svg-facebook {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -523,7 +479,7 @@ body {
   right: 0;
 }
 
-.tiktok-svg {
+.svg-tiktok {
   width: 40px;
   height: 40px;
   background-color: #383838;
@@ -533,13 +489,11 @@ body {
   right: 0;
 }
 
-/* ----- FOOTER ----- */
-
 .footer-wrapper {
   width: 100%;
   height: 226px;
   background-color: #383838;
-  margin-top: 160px;
+  margin-top: 100px;
   padding-top: 40px;
 }
 
@@ -547,18 +501,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-.footer-logo {
+.footer__logo {
   color: var(--WHITE, #f4f4f4);
   font-family: Syne;
   font-size: 32px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 3.52px;
 }
-
-.footer-nav-item {
+.footer__item {
   color: var(--WHITE, #f4f4f4);
   font-family: DM Sans;
   font-size: 20px;
@@ -566,4 +516,4 @@ body {
   font-weight: 400;
   line-height: normal;
   padding-bottom: 20px;
-}
+}/*# sourceMappingURL=main.css.map */

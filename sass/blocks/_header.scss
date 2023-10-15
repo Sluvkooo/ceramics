@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-size: normal;
+  font-weight: 400;
+  margin-top: 20px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-of-type) {
+    padding-right: 40px;
+  }
+}
+
+.logo {
+  font-family: "syne";
+  font-size: 36px;
+  font-weight: 500;
+}

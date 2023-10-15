@@ -1,0 +1,43 @@
+.classes {
+  &__img-1st {
+    width: 400px;
+    height: 295px;
+  }
+
+  &__img-2nd {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 400px;
+    height: 285px;
+  }
+
+  &__item {
+    color: var(--black, #383838);
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 80px;
+    margin-left: 105px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+  }
+
+  &__item::after {
+    content: "";
+    position: absolute;
+    margin-top: 50px;
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-color: #383838;
+  }
+}
+
+.classes .flex {
+  margin-top: 100px;
+}
